@@ -22,6 +22,7 @@ services:
       - ./:/usr/local/app
     restart: always  
     working_dir: /usr/local/app
+    #command: npm install
     command: node server/server.js
     depends_on:
       - redis-server
